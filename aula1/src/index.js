@@ -1,29 +1,43 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Button from './Button'
+// import Button from './Button'
 import './index.css';
 
-const soma = (a, b) => a + b
+// const soma = (a, b) => a + b
 
-const primeiroJSX = () => {
-  return (
-    <div className='test'>
-      BenHur Albertassi - Introdução ao ReactJS
-      {/* <h1> </h1> */}
-    </div>
-  )
+class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      clock: 1000,
+      copo: 'agua'
+    }
+  }
+
+  componentDidMount() {
+    window.setTimeout(() => {
+      this.setState({
+        copo: 'suco'
+      })
+    }, 3000)
+  }
+
+  alterarCopo = () => {
+    this.setState({
+      copo: 'refrigerante'
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.state.clock}</h1>
+        <button onClick={() => this.alterarCopo()}>{this.state.copo}</button>
+      </div>
+    )
+  }
 }
-
-const App = () => {
-  return (
-    <div className='App'>
-      {primeiroJSX()}
-      <Button onClick={() => soma(10, 20)} name='BenHur Albertassi' />
-    </div>
-  )
-}
-console.log(App);
-
 
 const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement)
