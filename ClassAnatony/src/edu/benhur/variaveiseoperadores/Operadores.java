@@ -84,6 +84,20 @@ public class Operadores {
         String nomeDois = "Ben";
 
         System.out.println(nomeUm.equals(nomeDois));
+
+        // operadores logicos
+
+        boolean condicao1 = true;
+        boolean condicao2 = false;
+
+        if (condicao1 && condicao2) {
+            System.out.println("As duas condições são verdadeiras");
+        }
+        if (condicao1 || condicao2) {
+            System.out.println("Uma das condições são verdadeiras");
+        }
+        System.out.println("Fim");
+
     }
 
 }
