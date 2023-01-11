@@ -40,7 +40,18 @@ class ExemploList {
         System.out.println("Exiba a menor nota: " + Collections.min(notas));
         
         System.out.println("Exiba a maior nota: " + Collections.max(notas));
-
+        
+        Iterator<Double> iterator = notas.iterator();
+        Double soma = 0d;
+        while (iterator.hasNext()) {
+            Double next = iterator.next();
+            soma += next;
+        }
+        System.out.println("Exiba a soma dos valores: " + soma);
+        
+        System.out.println("Exiba a media dos valores: " + (soma/notas.size()));
+        
+        System.out.println("Remova no nota 0: ");
 
     }
 }
