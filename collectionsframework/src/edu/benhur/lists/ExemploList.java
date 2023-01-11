@@ -30,6 +30,17 @@ class ExemploList {
         System.out.println("Confira se a nota 5.0 esta na lista: " + notas.contains(5d));
 
         System.out.println("Exiba todas as notas na ordem em que foram infomados: ");
-        for(Double nota : notas) System.out.println(nota);
+        for (Double nota : notas)
+            System.out.println(nota);
+            
+            
+        System.out.println("Exiba a terceira nota adcionada: " + notas.get(2));
+        System.out.println(notas.toString());
+        
+        System.out.println("Exiba a menor nota: " + Collections.min(notas));
+        
+        System.out.println("Exiba a maior nota: " + Collections.max(notas));
+
+
     }
 }
