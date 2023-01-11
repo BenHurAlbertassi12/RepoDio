@@ -56,6 +56,15 @@ class ExemploList {
         
         notas.remove(0);
         System.out.println("Remova no nota na posição 0: " + notas);
+        
+        System.out.println("Remova as notas menores que 7 e exiba a lista: " + notas);
+        Iterator<Double> iterator1 = notas.iterator();
+        while (iterator1.hasNext()) {
+            Double next = iterator1.next();
+            if (next < 7)
+                iterator1.remove();
+        }
+        System.out.println(notas);
 
     }
 }
