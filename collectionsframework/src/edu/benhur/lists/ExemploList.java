@@ -51,7 +51,11 @@ class ExemploList {
         
         System.out.println("Exiba a media dos valores: " + (soma/notas.size()));
         
-        System.out.println("Remova no nota 0: ");
+        notas.remove(0d);
+        System.out.println("Remova no nota 0: " + notas);
+        
+        notas.remove(0);
+        System.out.println("Remova no nota na posição 0: " + notas);
 
     }
 }
