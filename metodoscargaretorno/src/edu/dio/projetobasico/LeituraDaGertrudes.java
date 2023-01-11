@@ -7,11 +7,8 @@ public class LeituraDaGertrudes {
         Scanner leitor = new Scanner(System.in);
         int paginas = leitor.nextInt();
         int paginasLidas = 3;
-
-        // TODO: Crie a condição necessária para que Getrudes saiba em quanto tempo
-        // terminará seus livros
-        int tempoDeLeitura = paginas / paginasLidas;
-        System.out.println(tempoDeLeitura + " dias");
+        int timeOfRead = paginas / paginasLidas;
+        System.out.println(timeOfRead + " dias");
 
     }
 }
