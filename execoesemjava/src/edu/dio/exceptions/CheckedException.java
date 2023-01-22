@@ -8,10 +8,23 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
+import javax.swing.JOptionPane;
+
 public class CheckedException {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         String nomeDoArquivo = "tolkien.txt";
-        imprimirArquivoNoConsole(nomeDoArquivo);
+        try {
+            imprimirArquivoNoConsole(nomeDoArquivo);
+        }catch(FileNotFoundException e){
+            JOptionPane.showMessageDialog(
+                null, "Revise o nome do arquivo " + e.getCause());
+            e.printStackTrace();
+        
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(
+                null, "Erro inesperado, entre em contato com o suporte " + e.getCause());
+            e.printStackTrace();
+        }
         System.out.println("Com exception ou não, o programa continua...");
     }
     
