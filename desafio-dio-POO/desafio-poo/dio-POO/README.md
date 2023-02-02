@@ -145,6 +145,37 @@ Se possível:<br>
 🐛 Encontrar e relatar issues<br>
 </p>
 
+# Classe curso
+
+Esta classe representa um curso. Ela estende a classe Conteúdo, o que significa que herda todas as propriedades e métodos da classe Conteúdo.
+
+A classe Curso tem uma propriedade chamada cargaHoraria, que representa a quantidade de horas que o curso tem. Ela também tem um método calcularXp() que calcula a quantidade de XP que o usuário ganhará ao completar o curso.
+
+Além disso, existem métodos get e set para a propriedade cargaHoraria, que permitem ler e escrever o valor desta propriedade. E por fim, temos o método toString() que retorna uma representação em forma de texto dos valores das propriedades desta classe.
+
+
+# classe mentoria
+
+Esta classe representa uma mentoria. Ela também estende a classe Conteúdo, o que significa que herda todas as propriedades e métodos da classe Conteúdo.
+
+A classe Mentoria tem uma propriedade chamada data, que representa a data da mentoria. Ela também tem um método calcularXp() que calcula a quantidade de XP que o usuário ganhará ao completar a mentoria. Neste caso, a quantidade de XP é sempre XP_PADRAO + 20.
+
+Além disso, existem métodos get e set para a propriedade data, que permitem ler e escrever o valor desta propriedade. E por fim, temos o método toString() que retorna uma representação em forma de texto dos valores das propriedades desta classe.
+
+
+# classe BootCamp
+
+Este é o código da classe Bootcamp. Nesta classe, há atributos como nome, descrição, data inicial e data final do bootcamp, além de dois conjuntos de dados: um para guardar informações sobre os desenvolvedores inscritos no bootcamp (DevsInscritos) e outro para armazenar informações sobre o conteúdo que será abordado (Conteudos). A classe possui métodos para obter e definir valores para esses atributos, além de métodos equals e hashCode para verificar se dois objetos da classe Bootcamp são iguais.
+
+
+# classe Dev
+
+Este é o código de uma classe "Dev". Essa classe representa um desenvolvedor que está inscrito em um bootcamp. A classe tem três atributos: nome, conteudosInscritos e conteudosConcluidos. O método inscreverBootcamp permite que o desenvolvedor se inscreva em um bootcamp, adicionando todos os conteúdos do bootcamp aos conteúdos Inscritos e adicionando o desenvolvedor a lista de desenvolvedores inscritos no bootcamp. O método progredir permite que o desenvolvedor progrida no bootcamp, movendo o primeiro conteúdo da lista de conteúdosInscritos para a lista de conteúdosConcluidos. O método calcularTotalXp calcula o total de pontos de experiência (XP) do desenvolvedor, somando o XP de todos os conteúdos concluídos. Além disso, a classe também possui métodos para definir e obter o nome, conteudos Inscritos, e conteudos Concluidos.
+
+
+# classe Conteudo
+
+Este é um código que cria a classe abstrata "Conteudo". Essa classe define um título e uma descrição para um conteúdo e tem um método abstrato "calcularXp" que será implementado nas subclasses. A classe também tem uma constante XP_PADRAO com o valor 10. A classe contém os métodos getters e setters para o título e a descrição.
 
 
 ------------
