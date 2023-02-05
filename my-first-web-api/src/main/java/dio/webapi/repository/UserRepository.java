@@ -5,11 +5,16 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+import dio.webapi.handler.BusinessException;
 import dio.webapi.model.Usuario;
 
 @Repository
 public class UserRepository {
-    public void save(Usuario usuario){
+    public void save(Usuario usuario) {
+        if (usuario.getId() == null)
+            throw new BusinessException("login");
+        if (usuario.getId() == null)
+            throw new BusinessException("password");
         if(usuario.getId()==null)
           System.out.println("SAVE - Recebendo o usuário na camada de repositório");
         else
