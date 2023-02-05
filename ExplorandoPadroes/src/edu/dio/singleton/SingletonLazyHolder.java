@@ -1,4 +1,4 @@
-package edu.dio.singleton;
+package singleton;
 
 public class SingletonLazyHolder {
             private static class InstanceHolder {
