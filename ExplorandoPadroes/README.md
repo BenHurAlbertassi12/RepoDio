@@ -1,18 +1,17 @@
-## Getting Started
+# Explorando Padrões de Bootcamp Orange
+Este repositório tem como objetivo armazenar os desafios realizados durante o Bootcamp Orange, na trilha de Desenvolvimento de Software.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+ ##Conteúdo
+Neste repositório você encontrará os desafios realizados, abordando os seguintes temas:
 
-## Folder Structure
+## Padrões de Projeto
+Orientação a Objetos
+Objetivos
+O objetivo destes desafios é aplicar e compreender os padrões de projeto e orientação a objetos em aplicações Java. Além disso, o objetivo é aprimorar habilidades em programação e desenvolvimento de software.
 
-The workspace contains two folders by default, where:
+## Como contribuir
+Se você tem interesse em contribuir para este repositório, basta seguir os seguintes passos:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Forkar este repositório para sua conta;
+Realizar suas alterações;
+Enviar uma Pull Request para este repositório.
